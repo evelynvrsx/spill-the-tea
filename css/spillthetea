@@ -1,0 +1,597 @@
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
+
+body {
+    margin: 0;
+}
+
+main {
+    margin-bottom: 7.6em;
+}
+
+/* ------------- Top navigation bar -------------*/
+nav {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 100px;
+    position: relative;
+    display: flex; /* Display the children of this element as flexible boxes */
+    align-items: center; /* Align child flexible boxes in the vertical center */
+    overflow: hidden;
+    background-color: #4e424a;
+}
+
+/* Logo */
+#logo {
+    float: left;
+    display: block;
+}
+
+/* Admin info on top of the page */
+#admin-info {
+    background-color: #d9d5ca;
+    height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 1px;
+}
+
+/* Navigation links */
+nav a {
+    text-align: center;
+    flex-basis: 200px; /* Give each paragraph the same basic width */
+    flex-grow: 1; /* Allow each paragraph to grow evenly to fill up the parent nav element */
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+nav a:hover {
+    color: #c69f5d;
+}
+
+nav a.active {
+    color: #c69f5d;
+}
+
+/* ------------- Image slider on home page ------------- */
+#slider {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Submit button on slider */
+.Slider-button input[type=submit] {
+    color: white;
+    background-color: rgba(78, 74, 66, 0.16);
+    margin-left: 42.5%;
+    padding: 12px 20px;
+    border-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+.Slider-button input[type=submit]:hover {
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+/* Text & title on slider */
+.Slider-text {
+    background-color: rgba(78, 74, 66, 0.52);
+    bottom: 150px;
+    width: 100%;
+    font-weight: bolder;
+    color: white;
+    text-shadow: #4e424a 2px 2px;
+    position: absolute;
+    display: block;
+}
+
+#slider h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+}
+
+#slider p {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Slider images */
+#slider figure {
+    position: relative;
+    width: 480%;
+    animation: 15s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 10%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    10% {
+        left: -10%;
+    }
+    20% {
+        left: -20%;
+    }
+    40% {
+        left: -40%;
+    }
+    60% {
+        left: -60%;
+    }
+    80% {
+        left: -80%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+/* ------------ Footer ------------*/
+footer {
+    margin-top: 0.5em;
+    width: 100%;
+    background-color: #d9d5ca;
+    height: 80px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    bottom: 0;
+}
+
+#footericons li
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 40px;
+    float: right;
+    font-weight: bold;
+}
+
+#footericons li a:hover
+{
+    opacity: 70%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* ------------- Menu page -------------- */
+/* Menu title */
+.menu-heading h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #3f373b;
+}
+
+.menu-heading p {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #3f373b;
+}
+
+/* Search engine */
+.search-engine {
+    text-align: center;
+}
+
+/* Search bar text box */
+.search-engine input[type=search] {
+    border-color: #4e424a;
+    padding: 10px 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Search button */
+.search-engine input[type=submit] {
+    color: white;
+    background-color: #4e424a;
+    margin-left: 0.5%;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.search-engine input[type=submit]:hover {
+    background-color: #72656d;
+}
+
+/* Search engine echo */
+.search-engine-empty {
+    font-family: 'Quicksand',sans-serif;
+    text-align: center;
+}
+
+.search-engine-not-found {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.boba-flavour-name {
+    font-family: Raleway;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+}
+
+.prices {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu-line-break {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    border-top: #3f373b solid 1px;
+    margin: auto;
+    width: 30%;
+}
+
+/* Sort out function */
+
+.sort-boba h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #4e424a;
+}
+
+.sort-boba p{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #3f373b;
+}
+
+.sort-boba select[name=manage] {
+    border-color: #4e424a;
+    padding: 10px 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sort-boba select[name=manage i] {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sort-button input[type=submit] {
+    color: white;
+    background-color: #4e424a;
+    padding: 10px 67px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sort-button input[type=submit]:hover {
+    background-color: #a19391;
+}
+
+.sort-dropdown {
+    border-color: #4e424a;
+    padding: 10px 10px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+/* Boba products layout grid */
+.menu-grid {
+    font-family: 'Quicksand', sans-serif;
+    width: 80%;
+    text-align: center;
+}
+
+/* --------------- Contact page ---------------- */
+/* Contact Page description */
+.contact-info h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #3f373b;
+}
+
+.contact-info p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(78, 66, 74);
+}
+
+/* Contact page form */
+#contact-form {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    display: flex;
+}
+
+.contact-form-left-column {
+    margin-left: 38%;
+}
+
+.contact-form-right-column {
+    margin-left: 2%;
+    margin-right: 30%;
+}
+
+#contact-submit-button {
+    text-align: center;
+    color: white;
+    background-color: #4e424a;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+#contact-submit-button:hover {
+    text-align: center;
+    color: white;
+    background-color: #72656d;
+}
+
+/* Locations section */
+.locations-content h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #d9d5ca;
+}
+
+.locations-content p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #d9d5ca;
+    font-size: 15px;
+}
+
+.locations-content {
+    text-align: center;
+    margin: auto;
+    border-top: #c4b5b4 solid 1px;
+    background-color: #4e424a;
+    margin: auto;
+    padding: 40px;
+}
+
+.locations-description p{
+    background-color: #c4b5b4;
+    text-align: center;
+    color: #3f353b;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    margin: auto;
+}
+
+/* --------------- Log in page --------------- */
+/* Login page description */
+.login-form {
+    display: flex;
+}
+
+.login-form h1 {
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #3f373b;
+}
+
+.login-form p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: rgb(78, 66, 74);
+}
+
+#login_form {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+
+#login-submit-button {
+    text-align: left;
+    color: white;
+    background-color: #4e424a;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+#login-submit-button:hover {
+    text-align: left;
+    color: white;
+    background-color: #72656d;
+}
+
+.login-content {
+    display: block;
+    margin-left: 35%;
+}
+
+.login-illustration {
+    margin-left: 1.5%;
+}
+
+/* ------------- Update page ------------- */
+/* Add boba form (to insert a new boba flavour to the database */
+.add-boba-form {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.add-boba-form h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #3f373b;
+}
+
+#add-submit-button {
+    text-align: center;
+    color: white;
+    background-color: #4e424a;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px 70px;
+    cursor: pointer;
+}
+
+#add-submit-button:hover {
+    color: white;
+    background-color: #72656d;
+}
+
+/* Update boba table */
+.update-boba h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #3f373b;
+}
+
+.update-boba-table table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-family: Quicksand;
+    text-align: center;
+}
+
+.image-submit {
+    text-align: center;
+    color: white;
+    background-color: #4e424a;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.image-submit:hover {
+    color: white;
+    background-color: #72656d;
+}
+
+.delete-boba {
+    text-align: center;
+    color: white;
+    background-color: #a19391;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.delete-boba:hover {
+    text-align: center;
+    color: #c69f5d;
+    background-color: #3f373b;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ------------------- Orders page ------------------- */
+.orders-content h2{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    width: 40%;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #3f373b;
+    border-bottom: #4e424a solid 1px;
+}
+
+.orders-info-table table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-family: Quicksand;
+    text-align: center;
+ }
+
+/* ------------------- About Us page ---------------------- */
+.about-us-intro h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #3f373b;
+}
+
+.about-us-intro {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.about-us-intro p{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.our-story-title h2{
+    background-color: #c4b5b4;
+    text-align: center;
+    color: #3f353b;
+    font-family: 'Playfair Display', Serif;
+    font-size: 40px;
+    padding: 25px;
+    margin: auto;
+}
+
+.about-us-section-1 {
+    background-color: #3f373b;
+    color: #c4b5b4;
+    font-family: 'Quicksand', sans-serif;
+    padding: 60px;
+}
+
+.about-us-section-1 h3{
+    background-color: #3f373b;
+    color: #c4b5b4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.handmade-pearls-images {
+    text-align: center;
+    margin: auto;
+}
+
+.about-us-section-1 p{
+    background-color: #3f373b;
+    color: #c4b5b4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
